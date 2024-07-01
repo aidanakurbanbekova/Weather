@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <html>
+      <body>
+        <div class="container">
+          <div class="search-box">
+            <i class="bx bxs-map"></i>
+            <input
+              type="text"
+              placeholder="Enter your location ..."
+              class="search-input"
+            />
+            <button class="bx bx-search" id="search-btn"></button>
+          </div>
+          <div class="error">
+            <div class="error-block">Invalid city name</div>
+          </div>
+          <div class="weather-info">
+            <div class="weather-image">
+              <img src="./img/sun.webp" alt="weather-image" />
+              <span class="city">USA</span>
+              <span class="temperature">16 °C</span>
+              <p class="description"></p>
+            </div>
+            <div class="weather-details">
+              <section class="weather__details">
+                <i class="bx bx-water"></i>
+                <p class="humidity">Humidity</p>
+                <span class="detail-text"></span>
+              </section>
+              <section class="weather__details">
+                <i class="bx bx-wind"></i>
+                <p class="wind">Wind Speed</p>
+                <span class="detail-text"></span>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <script src="main.js"></script>
+      </body>
+    </html>
+  </head>
+</html>
